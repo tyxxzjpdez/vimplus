@@ -143,7 +143,9 @@ function copy_files()
     cp ${PWD}/.vimrc.local ~
 
     rm -rf ~/.ycm_extra_conf.py
-    ln -s ${PWD}/.ycm_extra_conf.py ~
+    curl -fLo ${PWD}/.auto_ycm_extra_conf.vim --create-dirs \
+    https://raw.githubusercontent.com/Valloric/ycmd/master/.ycm_extra_conf.py
+    ln -s ${PWD}/.auto_ycm_extra_conf.py ~/.ycm_extra_conf.py
 
     mkdir ~/.vim
     rm -rf ~/.vim/colors
