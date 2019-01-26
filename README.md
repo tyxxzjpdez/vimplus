@@ -144,7 +144,6 @@ An automatic configuration program for vim
 | `rr`         | 替换文本                             |
 | `<leader>r`  | 全局替换，目前只支持单个文件         |
 | `gcc`        | 注释代码                             |
-| `gcap`       | 注释段落                             |
 | `vif`        | 选中函数内容                         |
 | `dif`        | 删除函数内容                         |
 | `cif`        | 改写函数内容                         |
@@ -237,7 +236,7 @@ This software is licensed under the [MIT license][75]. © 2016 chxuan
   [23]: https://github.com/easymotion/vim-easymotion
   [24]: https://github.com/haya14busa/incsearch.vim
   [25]: https://github.com/mhinz/vim-startify
-  [26]: https://github.com/iamcco/markdown-preview.vim
+  [26]: https://github.com/iamcco/markdown-preview.nvim
   [27]: https://github.com/chxuan/change-colorscheme
   [36]: https://github.com/tpope/vim-fugitive
   [37]: https://pan.baidu.com/s/1-Z_U-eKbkMQqmI03qTzmFw
