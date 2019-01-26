@@ -20,11 +20,12 @@ function get_linux_platform_type()
     fi
 }
 
-# 判断是否是ubuntu16.04LTS版本
-function is_ubuntu1604()
+# 判断是否高于ubuntu16.04LTS版本
+function ubuntu_version_is_higher()
 {
-    version=$(cat /etc/lsb-release | grep "DISTRIB_RELEASE")
-    if [ ${version} == "DISTRIB_RELEASE=16.04" ]; then
+    version=$(cat /etc/lsb-release | grep "DISTRIB_RELEASE" | cut -d '=' -f 2 | cut -d '.' -f 1)
+    leasrVersion="16"
+    if [ ${version} -ge ${leasrVersion} ]; then
         echo 1
     else
         echo 0
@@ -44,15 +45,15 @@ function compile_vim_on_ubuntu()
 
     sudo apt-get install -y libncurses5-dev libgnome2-dev libgnomeui-dev \
         libgtk2.0-dev libatk1.0-dev libbonoboui2-dev \
-        libcairo2-dev libx11-dev libxpm-dev libxt-dev python-dev python3-dev ruby-dev lua5.1 lua5.1-dev
+        libcairo2-dev libx11-dev libxpm-dev libxt-dev python-dev python3-dev ruby-dev lua5.1 liblua5.1-dev libperl-dev git
 
     git clone https://github.com/vim/vim.git ~/vim
     cd ~/vim
     ./configure --with-features=huge \
         --enable-multibyte \
         --enable-rubyinterp \
-        --enable-pythoninterp \
-        --with-python-config-dir=/usr/lib/python2.7/config \
+        --enable-python3interp \
+        --with-python3-config-dir=/usr/lib/python3.6/config \
         --enable-perlinterp \
         --enable-luainterp \
         --enable-gui=gtk2 \
@@ -115,14 +116,13 @@ function install_prepare_software_on_centos()
 function install_prepare_software_on_ubuntu()
 {
     sudo apt-get install -y ctags build-essential cmake python-dev python3-dev fontconfig curl libfile-next-perl ack-grep
-    ubuntu_1604=`is_ubuntu1604`
-    echo ${ubuntu_1604}
+    version_higher=`ubuntu_version_is_higher`
 
-    if [ ${ubuntu_1604} == 1 ]; then
-        echo "ubuntu 16.04 LTS"
+    if [ ${version_higher} == 1 ]; then
+        echo "ubuntu version is not lower than 16.04 LTS"
         compile_vim_on_ubuntu
     else
-        echo "not ubuntu 16.04 LTS"
+        echo "ubuntu version is lower than 16.04 LTS"
         sudo apt-get install -y vim
     fi
 }
