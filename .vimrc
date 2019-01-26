@@ -93,7 +93,7 @@ set fileencodings=utf8,ucs-bom,gbk,cp936,gb2312,gb18030
 " gvim/macvim设置
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 if has("gui_running")
-    set guifont=Droid\ Sans\ Mono\ Nerd\ Font\ Complete:h18 " 设置字体
+    set guifont=DroidSansMono\ Nerd\ Font\ Mono\ Book\ 12  " 设置字体
     set guioptions-=m           " 隐藏菜单栏
     set guioptions-=T           " 隐藏工具栏
     set guioptions-=L           " 隐藏左侧滚动条
