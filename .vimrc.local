@@ -1,2 +1,20 @@
-"set relativenumber  " 开启相对行号
+" 开启相对行号
+""set relativenumber  
+
+"启用鼠标,主要是为了拖拽split后的窗体,注意会导致鼠标右键不出菜单
+set mouse=a
+
+"https://github.com/Valloric/YouCompleteMe#the-gycm_global_ycm_extra_conf-option
+"solve the problem: NoExtraConfDetected: No .ycm_extra_conf.py file detected
+let g:ycm_global_ycm_extra_conf = '/home/tyxxzjpdez/.vimplus/.ycm_extra_conf.py'
+
+"copy,cut and paste 
+""map <leader>c "+y
+""map <leader>x "+d
+""map <leader>v "+gp
+
+"透明主题
+""colorscheme ron
+"外框主题
+""let g:airline_theme="qwq"
 
