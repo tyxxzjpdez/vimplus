@@ -60,7 +60,7 @@ flags = [
 '-x',
 'c++',
 
-# c/c++ inlcude path
+# c/c++ include path
 # the start path is DIR_OF_THIS_SCRIPT
 # '-isystem',
 # 'cpp/pybind11',
