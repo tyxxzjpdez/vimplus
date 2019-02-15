@@ -188,7 +188,7 @@ function install_vim_plugin()
 function compile_ycm_on_linux()
 {
     cd ~/.vim/plugged/YouCompleteMe
-    ./install.py --clang-completer
+    python3 ./install.py --clang-completer
 }
 
 # mac编译ycm插件
