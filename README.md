@@ -97,7 +97,6 @@ An automatic configuration program for vim
 | [markdown-preview][26]              | markdown实时预览                                                               |
 | [vim-fugitive][36]                  | 集成Git                                                                        |
 | [gv][64]                            | 显示git提交记录                                                                |
-| [vim-slash][50]                     | 优化搜索，移动光标后清除高亮                                                   |
 | [echodoc][57]                       | 补全函数时在命令栏显示函数签名                                                 |
 | [vim-smooth-scroll][60]             | 让翻页更顺畅                                                                   |
 | [clever-f.vim][68]                  | 强化f和F键                                                                     |
@@ -242,7 +241,6 @@ This software is licensed under the [MIT license][75]. © 2016 chxuan
   [37]: https://pan.baidu.com/s/1-Z_U-eKbkMQqmI03qTzmFw
   [38]: https://github.com/Valloric/YouCompleteMe
   [39]: https://github.com/chxuan/vimplus/issues
-  [50]: https://github.com/junegunn/vim-slash
   [51]: https://github.com/ryanoasis/nerd-fonts
   [52]: https://github.com/tiagofumo/vim-nerdtree-syntax-highlight
   [53]: https://github.com/Xuyuanp/nerdtree-git-plugin
