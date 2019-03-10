@@ -116,7 +116,7 @@ Plug 'chxuan/vim-buffer'
 Plug 'chxuan/vimplus-startify'
 Plug 'chxuan/tagbar'
 Plug 'Valloric/YouCompleteMe'
-Plug 'Yggdroot/LeaderF'
+Plug 'Yggdroot/LeaderF', { 'do': './install.sh' }
 Plug 'mileszs/ack.vim'
 Plug 'easymotion/vim-easymotion'
 Plug 'haya14busa/incsearch.vim'
