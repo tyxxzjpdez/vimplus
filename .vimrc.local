@@ -6,7 +6,7 @@ set mouse=a
 
 "https://github.com/Valloric/YouCompleteMe#the-gycm_global_ycm_extra_conf-option
 "solve the problem: NoExtraConfDetected: No .ycm_extra_conf.py file detected
-let g:ycm_global_ycm_extra_conf = '~/.vimplus/.ycm_extra_conf.py'
+let g:ycm_global_ycm_extra_conf = '~/.ycm_extra_conf.py'
 
 "copy,cut and paste 
 ""map <leader>c "+y
