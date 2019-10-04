@@ -146,6 +146,7 @@ Plug 'terryma/vim-smooth-scroll'
 Plug 'rhysd/clever-f.vim'
 Plug 'rhysd/github-complete.vim'
 Plug 'vim-scripts/indentpython.vim'
+Plug 'rust-lang/rust.vim'
 
 call plug#end()            
 
